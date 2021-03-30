@@ -54,7 +54,7 @@ int main(void)
 	fgets(input_text, 500, stdin);
 	
 	// If the string is higher than the allowed, ends the program.
-	if (strlen(input_text) > 500)
+	if (strlen(input_text) > 500 || strlen(input_text) < 2)
 	{
 	    return 2;
 	}
